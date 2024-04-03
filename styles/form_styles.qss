@@ -1,0 +1,260 @@
+
+*, * > * {
+    color: white;
+    border-radius: 7px;
+}
+
+QGroupBox {
+    background-color: rgb(45, 45, 45);
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid  rgb(75, 75, 75);
+    border-left: 1px solid rgb(75, 75, 75);
+}
+#submit_btn_layout {
+    background-color: transparent;
+
+}
+QPushButton {
+    background-color: rgb(55, 55, 55);
+    /* border: 1px solid rgb(35,35,35); */
+}
+QPushButton:hover {
+    background-color: rgb(65, 65, 65);
+}
+QPushButton:pressed {
+    background-color: rgb(40, 40, 40);
+    /* border: none; */
+}
+/*
+#body_splitter::handle {
+    background-color: rgb(75, 75, 75);
+    border-radius: 1px;
+    padding-top: -3px;
+    padding-bottom:-3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left:    60px;
+    margin-right:   60px;
+}
+#display_splitter::handle {
+    background-color: rgb(75, 75, 75);
+    padding-left:-3px;
+    padding-right:-3px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 1px;
+}
+*/
+QSplitter::handle {background-color: transparent;}
+#title_label {
+    background-color: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#submit_btn {
+    background-color: rgb(165, 80, 51);
+    
+}
+#submit_btn:hover {
+    background-color: rgb(175, 85, 55);
+}
+#submit_btn:pressed {
+    background-color: rgb(107, 52, 33);
+}
+#submit_btn:disabled {
+    background-color: rgb(95, 73, 65);
+}
+
+#quit_btn:hover {
+    background-color: rgb(222, 66, 66);
+}
+#quit_btn:pressed {
+    background-color: rgb(111, 66, 66);
+}
+
+#chat_display, QLineEdit {
+    background-color: transparent;
+    border: 1px solid rgb(65,65,65);
+    padding: 7px;
+    padding-right: 0px;
+}
+
+#input_text {
+    background-color: transparent;
+    border: none;
+    padding: 7px;
+}
+
+#input_group {
+    background-color:rgb(55,55,55);
+    border: 1px solid rgb(65,65,65);
+}
+
+QTableWidget{
+    background-color:rgb(55,55,55);
+    border: 1px solid rgb(65,65,65);
+}
+QTableWidget::Item {
+    border: none;
+}
+QTableWidget::Item:selected {
+    background-color: rgb(75,75,75);
+}
+
+QTableWidget::Item:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+QTableWidget::Item:focus {
+    background-color: rgb(120,120,120);
+}
+
+/* scroll bars */
+  QScrollBar:horizontal
+    {
+        height: 15px;
+        margin: 3px 15px 3px 15px;
+        border: 1px transparent #2A2929;
+        border-radius: 4px;
+        background-color: yellow;    /* #2A2929; */
+    }
+
+    QScrollBar::handle:horizontal
+    {
+        background-color: blue;      /* #605F5F; */
+        min-width: 5px;
+        border-radius: 4px;
+    }
+
+    QScrollBar::add-line:horizontal
+    {
+        margin: 0px 3px 0px 3px;
+        border-image: url(:/images/right_arrow_disabled.png);       /* # <-------- */
+        width: 10px;
+        height: 10px;
+        subcontrol-position: right;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::sub-line:horizontal
+    {
+        margin: 0px 3px 0px 3px;
+        border-image: url(:/images/left_arrow_disabled.png);        /* # <-------- */ 
+        height: 10px;
+        width: 10px;
+        subcontrol-position: left;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::add-line:horizontal:hover,QScrollBar::add-line:horizontal:on
+    {
+        border-image: url(:/images/right_arrow.png);               /* # <-------- */
+        height: 10px;
+        width: 10px;
+        subcontrol-position: right;
+        subcontrol-origin: margin;
+    }
+
+
+    QScrollBar::sub-line:horizontal:hover, QScrollBar::sub-line:horizontal:on
+    {
+        height: 10px;
+        width: 10px;
+        subcontrol-position: left;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+    {
+        background: none;
+    }
+
+
+    QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+    {
+        background: none;
+    }
+
+
+    QScrollBar:vertical
+    {
+        background-color: transparent;
+        width: 15px;
+        margin: 7px 3px 7px 3px;
+        padding-left: 2px;
+        padding-right: 2px;
+        border: 1px transparent #2A2929;
+        border-radius: 1px;
+    }
+    QScrollBar:vertical::hover
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    QScrollBar::handle:vertical
+    {
+        background-color: rgb(75,75,75);
+        min-height: 5px;
+        border-radius: 4px;
+    }
+
+    QScrollBar::sub-line:vertical
+    {
+        margin: 3px 0px 3px 0px; 
+        height: 7px;
+        width: 1px;
+        subcontrol-position: top;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::add-line:vertical
+    {
+        margin: 3px 0px 3px 0px; 
+        height: 7px;
+        width: 1px;
+        subcontrol-position: bottom;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical
+    {
+        background: none;
+    }
+
+    QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+    {
+        background: none;
+    }
+
+/* Slider */
+
+ QSlider::groove:horizontal {
+    background: rgb(86, 86, 86);
+    height: 10px;
+    border-radius: 5px;
+}
+
+QSlider::sub-page:horizontal {
+    background: rgb(165, 80, 51);
+    border-radius: 5px;
+}
+
+QSlider::handle:horizontal {
+    width: 12px;
+    border-radius: 5px;
+    background-color: rgb(160, 160, 160);
+    margin-top: -1px;
+    margin-bottom: -1px;
+    /* border: 1px solid rgb(35,35,35); */
+}
+QSlider::handle:hover {
+    background-color: rgb(199, 199, 199);
+}
+QSlider::handle:pressed {
+    background-color: rgb(142, 142, 142);
+}
