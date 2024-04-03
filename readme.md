@@ -1,6 +1,6 @@
 This application: 
 
-- is a (quite) simple project for personal practise.
+- is a (quite) simple project for personal practice.
 - is built with PySide6.
 - uses OpenAI ChatGPT API.
 - install: install `requirement.txt`, then run `python main.pyw`
